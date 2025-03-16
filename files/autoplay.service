@@ -1,0 +1,14 @@
+[Unit]
+Description=Autoplay
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi     
+User=pi
+Group=pi
+Environment="DISPLAY=:0"
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+ExecStart=/bin/sh /home/pi/scripts/autoplay.sh
+
+[Install]
+WantedBy=multi-user.target
