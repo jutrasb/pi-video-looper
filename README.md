@@ -13,7 +13,12 @@ Based on information found at https://github.com/term7/RaspberryPi-VLC_Videoloop
 
 1. Install required packages:
 	```
-	sudo apt-get install exfat-fuse vlc -y
+	sudo apt-get install git exfat-fuse exfatprogs vlc -y
+	```
+
+1. Clone this repository.
+	```
+	git clone https://github.com/jutrasb/pi-video-looper.git
 	```
 
 ## Installation
@@ -28,6 +33,15 @@ Based on information found at https://github.com/term7/RaspberryPi-VLC_Videoloop
 	mkdir ~/scripts
 	```
 1. Copy the autoplay script `autoplay.sh` from this repository to `~/scripts/autoplay.sh`.
+	```
+	cp ~/pi-video-looper/files/autoplay.sh ~/scripts/autoplay.sh
+	```
+
+1. Make the autoplay script executable:
+	```
+	sudo chmod +x ~/scripts/autoplay.sh
+	```
+
 1. Enable the VLC autoplay service
 	```
 	sudo systemctl enable autoplay.service
