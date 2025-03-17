@@ -11,7 +11,7 @@ export PLAYLIST=/home/pi/playlist.m3u
 
 # Video Filetypes (you can add more filetypes):
 
-FILETYPES="-iname *.mp4 -o -iname *.mov -o -iname *.mkv"
+FILETYPES="-iname *.mp4 -o -iname *.m4v -o -iname *.mov -o -iname *.mkv -o -iname *.avi -o -iname *.wmv -o -iname *.webm -o -iname *.3gp"
 
 # Playlist Options:
 Playlist_Options="-L --started-from-file --one-instance --playlist-enqueue"
